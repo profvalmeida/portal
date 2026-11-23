@@ -1,0 +1,18 @@
+.grade {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--espaco-3);
+  margin-top: var(--espaco-3);
+}
+
+@media (max-width: 900px) {
+  .grade {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grade {
+    grid-template-columns: 1fr;
+  }
+}

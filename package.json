@@ -6,12 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:migrar": "node --env-file=.env scripts/migrar.mts",
+    "db:semear": "node --env-file=.env scripts/semear.mts"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^1.2.1",
     "next": "16.4.6",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "server-only": "^0.0.1"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -19,6 +23,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.4.6",
+    "prettier": "3.10.1",
     "typescript": "^5"
   }
 }
